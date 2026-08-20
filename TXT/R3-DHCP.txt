@@ -1,0 +1,67 @@
+R3-DHCP
+------------------------------------------------------------------------------------------------------------------
+ena
+conf t
+hostname R3DHCP
+banner motd #ACCESO SOLO AUTORIZADO - Edwin Ariel Torres Rodas - 2025-2681#
+int gig0/0/0
+ip add 26.81.75.101 255.255.255.252
+no sh
+exit
+int gig0/1/0
+ip add 26.81.75.105 255.255.255.252
+no sh
+exit
+int gig0/2/0
+ip add 26.81.75.97 255.255.255.252
+no sh
+exit
+ip dhcp excluded-address 26.81.74.1
+ip dhcp excluded-address 26.81.75.1
+ip dhcp excluded-address 26.81.75.65
+ip dhcp excluded-address 26.81.72.1 26.81.72.2
+ip dhcp excluded-address 26.81.64.1 26.81.64.3
+ip dhcp excluded-address 26.81.75.33 26.81.75.35
+ip dhcp pool FINANZAS
+network 26.81.75.0 255.255.255.224
+default-router 26.81.75.1
+dns-server 26.81.74.131
+exit
+ip dhcp pool TI
+network 26.81.75.64 255.255.255.224
+default-router 26.81.75.65
+dns-server 26.81.74.131
+exit
+ip dhcp pool WIFI
+network 26.81.72.0 255.255.254.0
+default-router 26.81.72.1
+dns-server 26.81.74.131
+exit
+ip dhcp pool ACADEMICOS
+network 26.81.75.32 255.255.255.224
+default-router 26.81.75.33
+dns-server 26.81.74.131
+exit
+ip dhcp pool DOCENTES_ESTUDIANTES
+network 26.81.64.0 255.255.248.0
+default-router 26.81.64.1
+dns-server 26.81.74.131
+exit
+ip dhcp pool EMPLEADOS
+network 26.81.74.0 255.255.255.224
+default-router 26.81.74.1
+dns-server 26.81.74.131
+exit
+ip route 26.81.74.128 255.255.255.128 26.81.75.98
+ip route 26.81.74.0 255.255.255.224 26.81.75.98
+ip route 26.81.75.0 255.255.255.224 26.81.75.98
+ip route 26.81.75.64 255.255.255.224 26.81.75.98
+ip route 26.81.72.0 255.255.254.0 26.81.75.98
+ip route 26.81.64.0 255.255.248.0 26.81.75.106
+ip route 26.81.75.32 255.255.255.224 26.81.75.106
+ip route 26.81.64.0 255.255.248.0 26.81.75.102 5
+ip route 26.81.75.32 255.255.255.224 26.81.75.102 5
+ip route 0.0.0.0 0.0.0.0 209.165.200.226
+end
+wr
+show ip interface brief

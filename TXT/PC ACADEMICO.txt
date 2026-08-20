@@ -1,0 +1,11 @@
+PC ACADEMICO
+
+CONFIGURACION
+-------------
+La PC fue configurada para obtener direccion automaticamente:
+Desktop -> IP Configuration -> DHCP
+
+Segmento: VLAN 500
+Red: 26.81.75.32/27
+Gateway: 26.81.75.33
+DNS: 26.81.74.131

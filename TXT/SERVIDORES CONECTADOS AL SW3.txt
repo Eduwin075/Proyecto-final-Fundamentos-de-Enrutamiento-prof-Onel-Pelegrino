@@ -1,0 +1,28 @@
+SERVIDORES CONECTADOS AL SW3
+
+MAIL
+====
+CONFIGURACION IP ESTATICA
+-------------------------
+IP Address: 26.81.74.130
+Subnet Mask: 255.255.255.128
+Default Gateway: 26.81.74.129
+DNS Server: 26.81.74.131
+
+FTP
+===
+CONFIGURACION IP ESTATICA
+-------------------------
+IP Address: 26.81.74.132
+Subnet Mask: 255.255.255.128
+Default Gateway: 26.81.74.129
+DNS Server: 26.81.74.131
+
+DNS-WEB_INTRANET
+====================
+CONFIGURACION IP ESTATICA
+-------------------------
+IP Address: 26.81.74.131
+Subnet Mask: 255.255.255.128
+Default Gateway: 26.81.74.129
+DNS Server: 26.81.74.131

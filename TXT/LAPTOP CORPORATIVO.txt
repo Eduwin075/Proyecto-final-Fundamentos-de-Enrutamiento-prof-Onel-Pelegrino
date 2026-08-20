@@ -1,0 +1,22 @@
+LAPTOP CORPORATIVO
+
+CONFIGURACION INALAMBRICA
+-------------------------
+Config -> Wireless0
+
+Port Status: On
+SSID: Corporativos
+Authentication: WPA2-PSK
+PSK Pass Phrase: Cisco123
+Encryption Type: AES
+IP Configuration: DHCP
+
+AP ESPERADO
+-----------
+AP-LOBBY o AP-BIBLIOTECA
+
+DIRECCIONAMIENTO
+----------------
+Red: 26.81.72.0/23
+Gateway: 26.81.72.1
+DNS: 26.81.74.131

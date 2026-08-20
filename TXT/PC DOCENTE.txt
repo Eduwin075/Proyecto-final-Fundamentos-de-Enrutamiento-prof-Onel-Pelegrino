@@ -1,0 +1,11 @@
+PC DOCENTE
+
+CONFIGURACION
+-------------
+La PC fue configurada para obtener direccion automaticamente:
+Desktop -> IP Configuration -> DHCP
+
+Segmento: VLAN 300
+Red: 26.81.64.0/21
+Gateway: 26.81.64.1
+DNS: 26.81.74.131

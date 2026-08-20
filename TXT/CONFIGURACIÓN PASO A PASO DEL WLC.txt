@@ -1,0 +1,54 @@
+CONFIGURACIÓN PASO A PASO DEL WLC 
+==================================================================================================================
+
+1. Entrar desde la PC al lado de wireless al navegador web:
+   http://26.81.72.2
+
+2. Credenciales Iniciales:
+   User: Admin
+   Password: Cisco123 / Cisco123
+
+3. Asistente de Configuración Inicial:
+   System Name: WLC
+   Management IP Address: 26.81.72.2
+   Subnet Mask: 255.255.254.0
+   Default Gateway: 26.81.72.1
+   VLAN ID: 0 (o la VLAN correspondiente si aplica)
+   [Next]
+
+4. Configuración de Red Inalámbrica Inicial:
+   Network Name (SSID): Corporativo
+   Passphrase: Cisco123 / Cisco123
+   [Next] -> [Apply]
+
+5. Volver a ingresar a la interfaz gráfica vía HTTPS:
+   https://26.81.72.2
+   User: Admin
+   Password: Cisco123
+
+6. Crear WLANs (Menú WLANs -> Create New -> Go):
+   - WLAN 1:
+     * Profile Name: Biblioteca
+     * SSID: Biblioteca
+     * Status: Enabled
+     * Security: WPA+WPA2 -> PSK -> Cisco123
+     * [Apply]
+
+   - WLAN 2:
+     * Profile Name: Campus
+     * SSID: Campus
+     * Status: Enabled
+     * Security: WPA+WPA2 -> PSK -> Cisco123
+     * [Apply]
+
+7. Configurar AP Groups:
+   - Ir a Advanced / AP Groups -> New Group
+   - Nombre: Biblioteca / Lobby
+Lobby- Corporativos y Campus
+Biblioteca- 
+   - Asignar la WLAN correspondiente y mapear el Access Point a cada grupo.
+
+8. Asignación Servidor DHCP Principal en WLC:
+   - Ir a Controller -> Interfaces -> Management
+   - Primary DHCP Server: 26.81.75.97
+   - [Apply] y guardar cambios.
