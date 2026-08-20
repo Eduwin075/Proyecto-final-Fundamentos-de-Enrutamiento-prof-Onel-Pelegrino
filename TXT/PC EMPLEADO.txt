@@ -1,5 +1,5 @@
 PC EMPLEADO
-
+------------------------------------------------------------------------------------------------------------------
 CONFIGURACION
 -------------
 La PC fue configurada para obtener direccion automaticamente:
