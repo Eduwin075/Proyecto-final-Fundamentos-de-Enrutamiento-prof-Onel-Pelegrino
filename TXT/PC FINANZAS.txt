@@ -1,5 +1,5 @@
 PC FINANZAS
-
+------------------------------------------------------------------------------------------------------------------
 CONFIGURACION
 -------------
 La PC fue configurada para obtener direccion automaticamente:
